@@ -66,4 +66,6 @@ async def on_presence_update(before, after):
     await check_member(after)
 
 
-bot.run("MTUwNTIxNDgyNjQ1OTE3MzAwNQ.GLQ0i1.UBCat0jGVH5KlWHpo_ckLJ_hjVhzXNJv7O7ETs")
+import os
+
+bot.run(os.getenv("TOKEN"))
